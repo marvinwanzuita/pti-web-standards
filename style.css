@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:wght@300;400;700&display=swap');
+
+
+:root {
+  --cor-primaria: #385c72;
+  --cor-secundaria: #c9d4db;
+  --cor-primaria-clara: #F7F6F1;
+}
+
+
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--cor-primaria);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-primaria-clara);
+}
+
+/* ---------------- HEADER  ---------------- */
+
+header {
+  background-color: var(--cor-secundaria);
+}
+
+
+nav {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 18px;
+  display: flex;
+  justify-content: space-around;
+  color: var(--cor-primaria);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: var(--cor-primaria-clara);
+  background: var(--cor-primaria);
+}
+
+/* ----------------  MAIN ----------------  */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ----------------  RESUMO PROFISSIONAL ----------------  */
+
+.resumo-profissional {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumo {
+  padding: 40px;
+  font-size: 1.6rem;
+  color: var(--cor-primaria);
+  text-align: center;
+}
+
+.resumo-profissional img {
+  width: 700px;
+}
+
+/* ----------------  SERVIÇOS ----------------  */
+
+.servicos-fundo {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  color: var(--cor-primaria-clara);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.servicos-fundo h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.servicos {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.servico-bloco {
+  padding: 5px 40px;
+}
+
+/* ----------------  BENEFICIOS ----------------  */
+
+.beneficios-fundo {
+  width: 100%;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.beneficios-fundo h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.beneficios {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* ---------------- DEPOIMENTOS ---------------- */
+
+.depoimentos-fundo {
+  width: 100%;
+  background-color: var(--cor-primaria-clara);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.depoimentos-fundo h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.depoimentos {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.depoimentos-bloco {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.depoimentos-bloco img {
+  width: 160px;
+  height: auto;
+}
+
+.depoimentos-bloco p {
+  padding: 10px 30px;
+}
+
+/* ---------------- CONTATO ---------------- */
+
+.contato-fundo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-primaria);
+  color: var(--cor-primaria-clara);
+  text-align: center;
+  align-items: center;
+}
+
+.contato-fundo h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.contato {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.endereco {
+  text-align: left;
+}
+
+.endereco p {
+  line-height: 30px;
+  padding: 20px 60px;
+}
+
+.formulario {
+  align-items: flex-end;
+}
+
+form {
+  background-color: var(--cor-primaria-clara);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  color: var(--cor-primaria);
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  font-family: "Comfortaa", sans-serif;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--cor-primaria);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* -------------------------------------- RESPONSIVIDADE CELULAR -------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+
+  /* ---------------- HEADER  ---------------- */
+
+  header {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  nav {
+    padding: 18px;
+    color: var(--cor-primaria);
+    display: inline-block;
+  }
+
+  nav a {
+    text-decoration: none;
+    float: none;
+    display: block;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    color: var(--cor-primaria-clara);
+    background: var(--cor-primaria);
+  }
+
+  /* ----------------  MAIN ----------------  */
+
+
+  /* ----------------  RESUMO PROFISSIONAL ----------------  */
+
+  .resumo-profissional img {
+    display: none;
+  }
+
+  /* ----------------  SERVIÇOS ----------------  */
+
+  .servicos-fundo {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria-clara);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .servicos-fundo h2 {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  .servicos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .servico-bloco {
+    padding: 5px 40px;
+  }
+
+  /* ----------------  BENEFICIOS ----------------  */
+
+  .beneficios-fundo {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .beneficios-fundo h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  /* ---------------- DEPOIMENTOS ---------------- */
+
+  .depoimentos-fundo {
+    width: 100%;
+    background-color: var(--cor-primaria-clara);
+  }
+
+  .depoimentos-fundo h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .depoimentos-bloco {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .depoimentos-bloco img {
+    width: 160px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .depoimentos-bloco p {
+    padding: 10px 30px;
+  }
+
+  /* ---------------- CONTATO ---------------- */
+
+  .contato-fundo {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria-clara);
+    text-align: center;
+    align-items: center;
+  }
+
+  .contato-fundo h2 {
+    font-size: 2rem;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--cor-primaria);
+  }
+
+  .endereco {
+    text-align: left;
+  }
+
+  .endereco p {
+    line-height: 30px;
+    padding: 20px 40px;
+  }
+
+  .formulario {
+    margin: 0 auto;
+    align-items: flex-end;
+  }
+
+  form {
+    background-color: var(--cor-primaria-clara);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    color: var(--cor-primaria);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--cor-primaria);
+  }
+
+  /* ---------------- FOOTER ---------------- */
+
+  footer {
+    font-size: 0.9rem;
+    background-color: var(--cor-secundaria);
+    text-align: center;
+  }
+}
+
+/* -------------------------------------- RESPONSIVIDADE CELULAR -------------------------------------- */
+
+@media screen and (max-width: 425px) {
+
+
+  /* ---------------- HEADER  ---------------- */
+
+  header {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  nav {
+    padding: 18px;
+    color: var(--cor-primaria);
+    display: inline-block;
+  }
+
+  nav a {
+    text-decoration: none;
+    float: none;
+    display: block;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+
+  nav a:hover {
+    color: var(--cor-primaria-clara);
+    background: var(--cor-primaria);
+  }
+
+  /* ----------------  MAIN ----------------  */
+
+
+  /* ----------------  RESUMO PROFISSIONAL ----------------  */
+
+  .resumo-profissional img {
+    display: none;
+  }
+
+  /* ----------------  SERVIÇOS ----------------  */
+
+  .servicos-fundo {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria-clara);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .servicos-fundo h2 {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  .servicos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .servico-bloco {
+    padding: 5px 40px;
+  }
+
+  /* ----------------  BENEFICIOS ----------------  */
+
+  .beneficios-fundo {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .beneficios-fundo h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  /* ---------------- DEPOIMENTOS ---------------- */
+
+  .depoimentos-fundo {
+    width: 100%;
+    background-color: var(--cor-primaria-clara);
+  }
+
+  .depoimentos-fundo h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .depoimentos-bloco {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .depoimentos-bloco img {
+    width: 160px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .depoimentos-bloco p {
+    padding: 10px 30px;
+  }
+
+  /* ---------------- CONTATO ---------------- */
+
+  .contato-fundo {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--cor-primaria);
+    color: var(--cor-primaria-clara);
+    text-align: center;
+    align-items: center;
+  }
+
+  .contato-fundo h2 {
+    font-size: 2rem;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: var(--cor-primaria);
+  }
+
+  .endereco {
+    text-align: left;
+  }
+
+  .endereco p {
+    line-height: 30px;
+    padding: 20px 40px;
+  }
+
+  .formulario {
+    margin: 0 auto;
+    align-items: flex-end;
+  }
+
+  form {
+    background-color: var(--cor-primaria-clara);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    color: var(--cor-primaria);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    font-family: "Comfortaa", sans-serif;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--cor-primaria);
+  }
+
+  /* ---------------- FOOTER ---------------- */
+
+  footer {
+    font-size: 0.9rem;
+    background-color: var(--cor-secundaria);
+    text-align: center;
+  }
+}
